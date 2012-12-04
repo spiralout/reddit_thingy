@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reddit Thingy</title>
+        <style type="text/css">
+            td {
+                font-family: sans-serif;
+                vertical-align: top;
+                padding: 4px;
+            }            
+
+            td.score {
+                white-space: nowrap;
+            }
+
+            #status_indicator {
+                font-size: small;
+                vertical-align: middle;
+            }
+
+            tr {
+                padding: 6px;
+            }
+
+            table {
+                border-spacing: 0;
+            }
+        
+            tr.alt {
+                background-color: #EEEEEE;
+            }
+
+            .smaller {
+                font-size: x-small;
+            }
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="reddit_thingy.js"></script>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td><select id="subreddit_list"><option>Loading...</option></select></td>
+                    <td><button type="button" id="top_stories_button">Get Top Stories</button></td>
+                    <td id="status_indicator"></td>
+                </tr>
+            </table>
+        </form>
+        <br />
+        <table id="top_stories_table">
+            <tbody>
+            </tbody>
+        </table>
+    </body>
+</html>
+
